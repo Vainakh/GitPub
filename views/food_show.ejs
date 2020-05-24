@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food_show</title>
+  <head>
+    <style type="text/css">
+
+    body {
+      background-color: #11ace9;
+      color: white;
+    }
+
+    h1 {
+      text-transform: uppercase;
+      color:chocolate
+    }
+
+    h2 {
+      text-transform: uppercase;
+      color: rgb(194, 135, 7);
+    }
+
+    h3 {
+      font-size: 30px;
+      border-radius: 10px;
+      border: 3px solid black;
+      width: 10%;
+      margin: 40px auto;
+    }
+
+    h1,
+    h2,
+    h3 {
+      text-align: center;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    img {
+      display: block;
+      margin: auto;
+      border-radius: 10px;
+      border: 3px solid black;
+      max-width: 300px;
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+      text-align: center;
+      margin: auto;
+      display: block;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    .home-section {
+      margin-top: 50px;
+      color: white;
+      border: 2px solid white;
+      text-transform: uppercase;
+      text-decoration: none;
+      width: 30%;
+    }
+  
+    </style>
+  </head>
+    
+
+  <body>
+
+    <h1>at foo bar</h1>
+    <h2>
+        <%= showFood.name%>
+    </h2>
+    <h3>
+        $<%= showFood.price%>
+    </h3>
+
+    <img src="<%=showFood.image%>.png" alt="">
+
+    <a class="home-section" href="/food">Back to Food Index</a>
+
+  </body>
+</html>

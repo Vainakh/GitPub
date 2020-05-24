@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drinks_Index</title>
+  <style type="text/css">
+  
+   body {
+      background-color: #ce8314; 
+      color: white;
+    }
+
+    ul {
+      
+    }
+
+    li {
+     list-style: none;
+     margin: 10px;
+    }
+
+    a {
+      text-transform: uppercase;
+      text-decoration: none;
+      color: black;
+    } 
+
+    li:hover {
+      color: white;
+      transform: scale(1.1);
+      cursor: pointer;
+    } 
+
+    .home-section {
+      color: white;
+      border: 2px solid white;
+    }
+
+  </style>
+</head>
+  <body>
+    <h1>Welcome to gitPub</h1>
+      <ul>
+        <% for(let i = 0; i < drinks.length; i += 1){ %>
+          <li>
+            <a href="/drinks/<%=i%>"><%=drinks[i].name %></a>
+          </li>
+        <% } %>
+      </ul>
+
+      <a class="home-section" href="/">Back to Home Section</a>
+  </body>
+</html>
